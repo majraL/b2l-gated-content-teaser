@@ -1,0 +1,498 @@
+$brand-primary: #FF5A00;
+$primary-hot: #F75903;
+$primary-pale: #f4c9b9;
+
+$error-red: #cc4b37;
+
+$main-bg-blue: #253C86;
+$blue-dark: #263746;
+
+$white: #FFF;
+$black: #000;
+
+$txt-dark: #171717;
+
+$gray: #E6E6E6;
+$gray-light: #F9F9F9;
+$gray-darker: #c4d1db;
+$gray-dark: #808080;
+
+// FONT
+// Font basics
+$body-font-size: 100%;
+$line-height-default: 1.2;
+$letter-spacing-default: normal;
+
+// Font family
+$font-family-base:        "FSElliot-Regular", sans-serif;
+$font-family-heading:     "FSElliot", sans-serif;
+
+// Font Weight
+$font-weight-thin:    "FSElliot-Thin", sans-serif;
+$font-weight-light:   "FSElliot-Light", sans-serif;
+$font-weight-regular: "FSElliot-Regular", sans-serif;
+$font-weight-bold:    "FSElliot-Bold", sans-serif;
+$font-weight-heavy:   "FSElliot-Heavy", sans-serif;
+
+$superfly: "SuperFly-One";
+
+
+// LP CUSTOM
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  * {
+      outline: none;
+      &:focus {
+          outline: none;
+      }
+  }
+}
+
+h1,h2,h3,h4,h5 {
+  font-weight: 800!important;
+  font-family: $font-weight-heavy!important;
+}
+
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 26px;
+}
+
+ul li, a, p {
+  font-family: $font-weight-regular;
+  line-height: 1.3!important;
+}
+
+button {
+  text-align: center;
+  transition: all ease-in-out .2s;
+  &.btn-default {
+    margin: 1rem auto;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  span {
+    width: 100%;
+  }
+}
+
+ul {
+  margin-left: 0!important;
+  li {
+    list-style-type: none;
+  }
+}
+
+.heavy {
+    font-family: $font-weight-heavy;
+}
+.txt-orange {
+    color: $brand-primary!important;
+}
+
+.btn-default {
+    border-radius: 7px!important;
+    border: 2px solid $brand-primary;
+    background-color: $brand-primary;
+    box-shadow: 0 8px 23px 0 rgba(81,114,221,0.08);
+    color: $white!important;
+    padding: 1rem 2rem;
+    display: inline-flex;
+    margin-top: 1rem;
+    font-family: $font-weight-heavy;
+    transition: all ease-in-out .2s;
+    &:hover {
+      color: $white;
+      box-shadow: 2px 2px 16px 0 $blue-dark;
+    }
+    &.center {
+      margin: auto;
+    }
+  }
+
+.hidden {
+    display: none;
+    &.large {
+        @media (max-width: 1024px) {
+            display: block;
+        }
+    }
+    &.small {
+        @media (min-width: 1024px) {
+            display: block;
+        }
+    }
+}
+
+// MAIN WRPPER
+.main-wrapper {
+    background-color: $main-bg-blue;
+    color: $white!important;
+    padding-bottom: 2rem;
+    @media (max-width: 1200px) {
+        //padding: 0 1rem;
+    }
+    .nav-bar {
+        display: flex;
+        height: 100px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.5rem;
+        margin-bottom: 2rem;
+        @media (max-width: 1200px) {
+            padding: 0.5rem 1.5rem;
+        }
+        &.fixed {
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            //background: white;
+            padding: 2rem 2rem 0;
+            @media (max-width: 1200px) {
+                position: initial;
+                background-color: transparent;
+            }
+        }
+        .brand {
+            max-width: 200px;
+            transition: all ease-in-out .2s;
+            img {
+                height: 3rem;
+            }
+        }
+    }
+
+    .navigation {
+        /* padding: 2rem; */
+        ul li {
+            list-style-type: none;
+            display: inline-block;
+            margin-left: 1.5rem;
+
+            a {
+                color: #171717;
+                font-size: 15px;
+                font-weight: bold;
+                letter-spacing: -0.1px;
+                line-height: 20px;
+                transition: all ease-in-out .2s;
+
+                &:hover {
+                    color: $brand-primary;
+                }
+            }
+        }
+    }
+    .header {
+        padding-bottom: 2rem;
+        .header-intro {
+            font-family: $superfly!important;
+            font-weight: normal!important;
+            font-size: 3.7rem;
+            @media (max-width: 640px) {
+                font-size: 3rem;
+            }
+        }
+        .header-title {
+            font-size: 4.3rem;
+            line-height: 1;
+            margin-bottom: 2rem;
+            @media (max-width: 640px) {
+                font-size: 3.5rem;
+            }
+        }
+        .header-description {
+            font-size: 30px;
+            @media (max-width: 1024px) {
+                margin-bottom: 2rem;
+            }
+        }
+        .header-illustration {
+            img {
+                margin-top: -1.5rem;
+            }
+            @media (max-width: 1024px) {
+                img {
+                    margin-top: 0;
+                }
+                margin-top: 4rem;
+                display: none;
+            }
+        }
+        .btn-default {
+            //max-width: 20rem;
+            text-align: center;
+            display: inline-flex;
+        }
+    }
+}
+
+section {
+    &.cell-section {
+        padding-bottom: 3rem;
+        .main-section-title {
+            margin: 4rem auto 2rem;
+        }
+    }
+    &.data-section {
+        padding-top: 12rem;
+        padding-bottom: 6rem;
+        background-image: url("//cf-cdn.infobip.com/assets/2020/img/b2l-gated-ct/bg-world.png");
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        @media (max-width: 1024px) {
+            background-size: 250% 100%;
+        }
+        @media (min-width: 1024px) {
+            background-size: 150% 100%;
+        }
+    }
+    &.txt-invert {
+        color: $main-bg-blue!important;
+    }
+    .grid-container {
+        max-width: 85rem;
+    }
+    .section-title {
+        font-size: 2.8rem;
+    }
+}
+
+section, .header {
+    @media (max-width: 1200px) {
+        padding: 0 1rem;
+    }
+}
+
+//SCROLL ANIMATION
+.moving-mouse-holder {
+    margin: auto;
+    margin-top: 1rem;
+    width: 30px;
+    @media (max-width: 1024px) {
+        display: none;
+    }
+  }
+  
+  .moving-mouse-holder .mouse {
+    width: 26px;
+    height: 40px;
+    position: relative;
+    right: 0;
+    border-radius: 18px;
+    border: 2px solid $white;
+  }
+  
+  .moving-mouse-holder .mouse-button {
+    background-color: $white;
+    width: 4px;
+    height: 10px;
+    border-radius: 2px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin: 0 0 0 -2px;
+    animation: mouse-scroll 1s infinite alternate;
+  }
+  
+  @keyframes mouse-scroll {
+    to {
+      transform: translate(0, 6px) scale(1, 0.8);
+    }
+  }
+
+  //CELL
+  .cell-box {
+      text-align: left;
+      padding: 3rem;
+      img {
+          margin-bottom: 2rem;
+      }
+      .cell-text {
+          font-size: 1.4rem;
+          position: relative;
+          &:before {
+              width: 1.5rem;
+              height: 1.5rem;
+              font-size: 1rem;
+              padding: .2rem;
+              color: $white;
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              position: absolute;
+              left: -40px;
+              top: 5px;
+              border-radius: 50%;
+              background-color: $brand-primary;
+              font-family: $font-weight-heavy;
+              @media (max-width: 640px) {
+                position: initial;
+                display: block;
+                margin: 0 auto 1rem;
+                text-align: center;
+            }
+          }
+          &.one {
+              &:before {
+                content: "1";
+              }
+          }
+          &.two {
+              &:before {
+                content: "2";
+              }
+          }
+          &.three {
+              &:before {
+                content: "3";
+              }
+          }
+          &.four {
+              &:before {
+                content: "4";
+              }
+          }
+      }
+    @media (max-width: 640px) {
+        text-align: center;
+    }
+  }
+
+// LINE BARS
+  .data-wrapper {
+      margin-bottom: 6rem;
+    .databar {
+        position: relative;
+        display: block;
+        margin: 2rem auto .6rem;
+        width: 100%;
+        background: $white;
+        height: 50px;
+        border: 1px solid $main-bg-blue;
+        border-radius: 25px;
+    }
+    
+    .databar-title {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-weight: bold;
+        font-size: 1.5rem;
+        color: $white;
+        background: $main-bg-blue;
+        border-radius: 25px;
+        font-family: $font-weight-heavy;
+    }
+    
+    .databar-title span {
+        display: block;
+        background: transparent;
+        padding: 0 20px;
+        height: 48px;
+        line-height: 48px;
+        background-color: $main-bg-blue;
+        border-radius: 25px;
+    }
+    
+    .databar-bar {
+        height: 48px;
+        width: 0px;
+        // background: $main-bg-blue;
+        border-radius: 25px;
+        margin-left: 1rem;
+    }
+    
+    .skill-bar-percent {
+        display: none;
+    }
+    .data-bars {
+        .databar-text {
+            p {
+                font-size: 1.5rem;
+            }
+        }
+    }
+  }
+
+
+  // CIRCLE BARS
+
+
+  .data-block {
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    .txt-block {
+        padding: 1rem 4rem 1rem 1rem;
+        .data-number  {
+            font-size: 2.5rem;
+            color: $brand-primary!important;
+        }
+    }
+}
+  
+
+#download {
+    padding: 4rem 1rem;
+    img {
+        max-width: 15rem;
+        border: 1px solid $white;
+        margin: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
+    }
+}
+
+footer {
+    padding: 4rem 1rem 4rem;
+    ul {
+      margin: 0;
+      li {
+        list-style-type: none;
+        display: inline-block;
+        margin: 0 1rem 0;
+      }
+    }
+    .navigation {
+      margin: 3rem 1rem 5rem;
+      font-size: 15px;
+    }
+    .slogan {
+      font-size: 21px;
+      background-image: url('//cf-cdn.infobip.com/assets/2020/img/worlds.svg');
+      font-family: $font-weight-bold;
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      padding: 4rem 2rem;
+    }
+    .terms-navigation {
+      margin: 2rem;
+      ul li{
+        a {
+          font-size: 12px;
+          font-family: $font-weight-light;
+        }
+      }
+    }
+    .social-icons {
+      margin-bottom: 2rem;
+    }
+    @media (max-width: 1200px) {
+        .navigation ul li {
+            display: block;
+            margin-bottom: 1rem; 
+        }
+    }
+  }

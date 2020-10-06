@@ -1,0 +1,51 @@
+
+@font-face {
+     font-family: 'FSElliot-Thin';
+     src: url('../fonts/fselliot/FSElliotPro-Thin.woff2') format('woff2'), /* Modern Browsers */
+          url('../fonts/fselliot/FSElliotPro-Thin.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/fselliot/FSElliotPro-Thin.ttf')  format('truetype'); /* Safari, Android, iOS */
+          
+     font-style:   normal;
+     font-weight:  200;
+   }
+   
+   @font-face {
+     font-family: 'FSElliot-Light';
+     src: url('../fonts/fselliot/FSElliotPro-Light.woff2') format('woff2'), /* Modern Browsers */
+          url('../fonts/fselliot/FSElliotPro-Light.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/fselliot/FSElliotPro-Light.ttf')  format('truetype'); /* Safari, Android, iOS */
+          
+     font-style:   normal;
+     font-weight:  300;
+   }
+   
+   @font-face {
+     font-family: 'FSElliot-Regular';
+     src: url('../fonts/fselliot/FSElliotPro-Regular.woff2') format('woff2'), /* Modern Browsers */
+          url('../fonts/fselliot/FSElliotPro-Regular.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/fselliot/FSElliotPro-Regular.ttf')  format('truetype'); /* Safari, Android, iOS */
+          
+     font-style:   normal;
+     font-weight:  500;
+   }
+   
+   @font-face {
+     font-family: 'FSElliot-Bold';
+     src: url('../fonts/fselliot/FSElliotPro-Bold.woff2') format('woff2'), /* Modern Browsers */
+          url('../fonts/fselliot/FSElliotPro-Bold.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/fselliot/FSElliotPro-Bold.ttf')  format('truetype'); /* Safari, Android, iOS */
+          
+     font-style:   normal;
+     font-weight:  700;
+   }
+   
+   @font-face {
+     font-family: 'FSElliot-Heavy';
+     src: url('../fonts/fselliot/FSElliotPro-Heavy.woff2') format('woff2'), /* Modern Browsers */
+          url('../fonts/fselliot/FSElliotPro-Heavy.woff') format('woff'), /* Modern Browsers */
+          url('../fonts/fselliot/FSElliotPro-Heavy.ttf')  format('truetype'); /* Safari, Android, iOS */
+          
+     font-style:   normal;
+     font-weight:  900;
+   }
+   

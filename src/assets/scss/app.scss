@@ -1,8 +1,11 @@
 @charset 'utf-8';
 
+@import 'style';
 @import 'settings';
 @import 'foundation';
 @import 'motion-ui';
+@import "../fonts/fselliot/fselliot.scss";
+@import "../fonts/superfly/superfly.css";
 
 // Global styles
 @include foundation-global-styles;

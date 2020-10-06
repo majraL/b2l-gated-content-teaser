@@ -12,7 +12,9 @@
   "dependencies": {
     "foundation-sites": "^6.6.0",
     "jquery": "^3.2.1",
+    "js-plugin-circliful": "^2.0.15",
     "motion-ui": "^2.0.3",
+    "progressbar.js": "^1.1.0",
     "what-input": "^5.1.2"
   },
   "devDependencies": {
