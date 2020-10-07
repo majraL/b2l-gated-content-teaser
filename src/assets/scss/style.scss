@@ -119,15 +119,20 @@ ul {
   }
 
 .hidden {
-    display: none;
     &.large {
         @media (max-width: 1024px) {
-            display: block;
+            visibility: visible;
+        }
+        @media (min-width: 1024px) {
+            visibility: hidden;
         }
     }
     &.small {
         @media (min-width: 1024px) {
-            display: block;
+            visibility: visible;
+        }
+        @media (max-width: 1024px) {
+            visibility: hidden;
         }
     }
 }
@@ -426,8 +431,6 @@ section, .header {
 
 
   // CIRCLE BARS
-
-
   .data-block {
     margin: 3rem auto;
     display: flex;
