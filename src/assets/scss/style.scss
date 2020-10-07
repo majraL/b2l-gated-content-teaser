@@ -436,7 +436,15 @@ section, .header {
         padding: 1rem 4rem 1rem 1rem;
         .data-number  {
             font-size: 2.5rem;
-            color: $brand-primary!important;
+            color: $brand-primary;
+        }
+    }
+    #data-one, #data-two {
+        position: relative;
+        .progressbar-text {
+            position: relative;
+            color: $gray;
+            display: none;
         }
     }
 }
