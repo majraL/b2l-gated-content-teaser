@@ -1,0 +1,16 @@
+@font-face {
+    font-family: 'SuperFly-Two';
+    src: url('SuperFlyTwo.woff2') format('woff2'),
+        url('SuperFlyTwo.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SuperFly-One';
+    src: url('SuperFlyOne.woff2') format('woff2'),
+        url('SuperFlyOne.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
